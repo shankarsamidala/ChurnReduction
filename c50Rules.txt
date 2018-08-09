@@ -1,0 +1,262 @@
+
+Call:
+C5.0.formula(formula = Churn ~ ., data = smote_data, trails = 50, rules = T)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Sun Jul 08 17:07:15 2018
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 3297 cases (15 attributes) from undefined.data
+
+Rules:
+
+Rule 1: (60, lift 1.7)
+	international.plan = 1
+	number.vmail.messages <= 0.0003270246
+	total.day.charge > 0.3945772
+	total.day.charge <= 0.4635531
+	total.eve.charge > 0.6395988
+	->  class 1  [0.984]
+
+Rule 2: (1051/43, lift 1.7)
+	international.plan = 1
+	number.vmail.messages <= 0.0003270246
+	total.day.charge <= 0.6190314
+	number.customer.service.calls <= 0.4352941
+	->  class 1  [0.958]
+
+Rule 3: (63/2, lift 1.7)
+	international.plan = 1
+	voice.mail.plan = 2
+	number.vmail.messages > 0.1627146
+	total.day.calls <= 0.4453648
+	total.day.charge <= 0.6986699
+	->  class 1  [0.954]
+
+Rule 4: (17, lift 1.7)
+	number.vmail.messages > 0.3645374
+	total.day.charge > 0.5665043
+	total.eve.charge > 0.4186347
+	number.customer.service.calls > 0.4291458
+	->  class 1  [0.947]
+
+Rule 5: (11, lift 1.6)
+	international.plan = 2
+	number.vmail.messages <= 0.0003270246
+	total.night.charge <= 0.2964734
+	total.intl.calls > 0.1274638
+	total.intl.charge <= 0.6621507
+	->  class 1  [0.923]
+
+Rule 6: (8, lift 1.6)
+	account.length > 0.2044597
+	account.length <= 0.2405063
+	international.plan = 2
+	voice.mail.plan = 2
+	->  class 1  [0.900]
+
+Rule 7: (428/43, lift 1.6)
+	international.plan = 1
+	voice.mail.plan = 2
+	number.vmail.messages > 0.3645374
+	total.day.charge <= 0.6986699
+	number.customer.service.calls <= 0.4291458
+	->  class 1  [0.898]
+
+Rule 8: (183/18, lift 1.6)
+	number.vmail.messages > 0.5836341
+	total.eve.charge > 0.3406664
+	total.intl.calls > 0.1298446
+	total.intl.charge <= 0.6367047
+	->  class 1  [0.897]
+
+Rule 9: (764/79, lift 1.6)
+	international.plan = 1
+	number.vmail.messages <= 0.0003270246
+	total.day.charge > 0.4635531
+	total.day.charge <= 0.6986699
+	->  class 1  [0.896]
+
+Rule 10: (23/2, lift 1.5)
+	international.plan = 1
+	number.vmail.messages > 0.3570106
+	total.day.charge > 0.6986699
+	total.eve.charge > 0.4661313
+	total.intl.charge > 0.4554582
+	->  class 1  [0.880]
+
+Rule 11: (98/12, lift 1.5)
+	international.plan = 2
+	number.vmail.messages <= 0.0003270246
+	total.day.charge <= 0.7679355
+	total.intl.calls > 0.1274638
+	total.intl.charge <= 0.6621507
+	->  class 1  [0.870]
+
+Rule 12: (27/3, lift 1.5)
+	international.plan = 1
+	total.day.charge > 0.6986699
+	total.day.charge <= 0.7479879
+	total.night.charge <= 0.3861327
+	->  class 1  [0.862]
+
+Rule 13: (52/7, lift 1.5)
+	international.plan = 1
+	voice.mail.plan = 2
+	number.vmail.messages > 0.3645374
+	total.day.charge <= 0.6986699
+	total.eve.calls > 0.7080015
+	->  class 1  [0.852]
+
+Rule 14: (734/176, lift 1.3)
+	international.plan = 1
+	total.eve.charge <= 0.4661313
+	->  class 1  [0.760]
+
+Rule 15: (485, lift 2.3)
+	voice.mail.plan = 1
+	number.vmail.messages > 0.0003270246
+	->  class 2  [0.998]
+
+Rule 16: (187, lift 2.3)
+	international.plan = 2
+	total.intl.calls <= 0.1274638
+	->  class 2  [0.995]
+
+Rule 17: (115, lift 2.3)
+	international.plan = 2
+	total.intl.charge > 0.6621507
+	->  class 2  [0.991]
+
+Rule 18: (173/1, lift 2.3)
+	number.vmail.messages > 0.0003270246
+	total.day.charge <= 0.5665043
+	total.eve.calls <= 0.7080015
+	total.eve.charge <= 0.7301844
+	number.customer.service.calls > 0.4291458
+	->  class 2  [0.989]
+
+Rule 19: (324/3, lift 2.3)
+	number.vmail.messages > 0.0003270246
+	number.vmail.messages <= 0.1627146
+	->  class 2  [0.988]
+
+Rule 20: (162/2, lift 2.3)
+	total.day.charge <= 0.4635531
+	total.eve.charge <= 0.6395988
+	number.customer.service.calls > 0.4352941
+	->  class 2  [0.982]
+
+Rule 21: (440/8, lift 2.3)
+	account.length > 0.2405063
+	international.plan = 2
+	number.vmail.messages > 0.0003270246
+	number.vmail.messages <= 0.5836341
+	->  class 2  [0.980]
+
+Rule 22: (44, lift 2.3)
+	number.vmail.messages > 0.0003270246
+	total.eve.charge <= 0.4186347
+	number.customer.service.calls > 0.4291458
+	->  class 2  [0.978]
+
+Rule 23: (143/3, lift 2.3)
+	international.plan = 1
+	number.vmail.messages <= 0.3570106
+	total.day.charge > 0.7479879
+	total.eve.charge > 0.4661313
+	->  class 2  [0.972]
+
+Rule 24: (76/2, lift 2.2)
+	number.vmail.messages <= 0.0003270246
+	total.day.charge > 0.6190314
+	total.eve.charge > 0.6476955
+	total.night.charge > 0.4096395
+	->  class 2  [0.962]
+
+Rule 25: (679/27, lift 2.2)
+	number.vmail.messages > 0.0003270246
+	number.vmail.messages <= 0.3645374
+	total.day.calls > 0.4453648
+	->  class 2  [0.959]
+
+Rule 26: (19, lift 2.2)
+	international.plan = 1
+	total.day.calls <= 0.4761905
+	total.day.charge > 0.8280249
+	->  class 2  [0.952]
+
+Rule 27: (15, lift 2.2)
+	total.day.charge > 0.6190314
+	total.day.charge <= 0.6986699
+	total.eve.charge > 0.6476955
+	total.night.charge <= 0.4096395
+	total.intl.charge > 0.610254
+	number.customer.service.calls <= 0.4352941
+	->  class 2  [0.941]
+
+Rule 28: (62/3, lift 2.2)
+	account.length > 0.3727248
+	international.plan = 1
+	total.day.charge > 0.6986699
+	total.eve.charge > 0.4661313
+	total.intl.charge <= 0.4554582
+	->  class 2  [0.938]
+
+Rule 29: (44/2, lift 2.2)
+	international.plan = 2
+	total.day.charge > 0.7679355
+	total.night.charge > 0.2964734
+	->  class 2  [0.935]
+
+Rule 30: (181/11, lift 2.2)
+	international.plan = 1
+	number.vmail.messages <= 0.3570106
+	total.day.charge > 0.6986699
+	total.eve.charge > 0.4661313
+	total.night.charge > 0.3861327
+	->  class 2  [0.934]
+
+Rule 31: (377/91, lift 1.8)
+	total.day.charge <= 0.6986699
+	number.customer.service.calls > 0.4352941
+	->  class 2  [0.757]
+
+Default class: 1
+
+
+Evaluation on training data (3297 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	    31  186( 5.6%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	  1831    53    (a): class 1
+	   133  1280    (b): class 2
+
+
+	Attribute usage:
+
+	 91.63%	number.vmail.messages
+	 88.44%	international.plan
+	 74.92%	total.day.charge
+	 57.02%	number.customer.service.calls
+	 42.31%	total.eve.charge
+	 28.48%	voice.mail.plan
+	 23.05%	total.day.calls
+	 15.47%	account.length
+	 14.74%	total.intl.charge
+	 14.29%	total.intl.calls
+	  9.55%	total.night.charge
+	  6.82%	total.eve.calls
+
+
+Time: 0.1 secs
+
